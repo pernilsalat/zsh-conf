@@ -184,7 +184,7 @@ export FZF_DEFAULT_OPTS="
     --border='rounded'
     --border-label='   Fuzzy Finder '
     --border-label-pos='4'
-    --preview-window='border-rounded,hidden'
+    --preview-window 'right:65%,border-rounded'
     --prompt='  '
     --pointer='▌'
     --marker=' '
@@ -194,7 +194,6 @@ export FZF_DEFAULT_OPTS="
     --margin='1'
     --padding='1,1,0,1'
     --preview '[[ \$(file --mime {}) =~ binary ]] && print  {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -500'
-    --preview-window 'right:65%'
 
     # -- -- -- KEYBINDINGS -- -- --
     --bind 'ctrl-j:preview-down'
@@ -375,4 +374,4 @@ zstyle ':fzf-tab:*' fzf-flags \
     --bind 'ctrl-\:toggle-preview'
 
 zstyle ':fzf-tab:*' fzf-bindings 'space:accept'
-zstyle ':fzf-tab:*' accept-line enter
+# zstyle ':fzf-tab:*' accept-line enter
